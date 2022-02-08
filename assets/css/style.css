@@ -1,0 +1,534 @@
+/* TABLE OF CONTENTS */
+/* --------------------------------
+1. General
+2. Navbar
+3. Banner
+4. Client
+5. About
+6. Feature
+7. Pricing
+8. Reviews
+9. Brands
+10. Faq
+11. Footer
+--------------------------------- */
+
+/* 1. General */
+@font-face {
+  font-family: poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: quicksand;
+  src: url("../fonts/Quicksand-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: quicksand;
+}
+:root {
+  /* background color */
+  --bg-black: #090b3c;
+  --bg-white: #fff;
+  --bg-light-white: #fcfcfc;
+  --bg-light-2: #f2f7fa;
+  --bg-dark-green: #0e9d80;
+  --bg-features-1: #fff6d6;
+  --bg-features-2: #ebdcf9;
+  --bg-features-3: #ddf5fc;
+  --bg-features-4: #f8e4e1;
+  --bg-features-5: #fbffd4;
+  --bg-features-6: #fff666;
+
+  /* text color  */
+  --text-black: #000;
+  --text-white: #fff;
+  --text-dark-gray: #4c535d;
+  --text-light-2: #798089;
+  --text-light-3: #5e5e72;
+  --text-light-4: #a0a0a0;
+  --text-dark-green: #0e9d80;
+  --text-orange: #ff5d2a;
+  --text-yellow: #ffc100;
+
+  /* fonts */
+  --primary-font: quicksand, sans-serif;
+  --secondary-font: poppins, sans-serif;
+}
+
+/* custom css */
+
+.header_wrapper a.contact-btn {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--bg-black) !important;
+  padding: 12px 30px !important;
+  border: 1px solid var(--bg-black) !important;
+  border-radius: 10px;
+}
+.header_wrapper a.trial-btn {
+  background-color: var(--bg-black);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-white) !important;
+  padding: 12px 30px !important;
+  border-radius: 10px;
+}
+
+/* 2. Navbar */
+.header_wrapper .navbar-brand img {
+  max-width: 210px;
+}
+.header_wrapper .menu-navbar-nav {
+  display: flex;
+  justify-content: end;
+}
+.header_wrapper .nav-item {
+  margin: 0px 3px;
+}
+.header_wrapper .nav-item .nav-link {
+  color: var(--text-dark-gray);
+  font-weight: 700;
+  font-size: 18px;
+}
+.header_wrapper .nav-item .nav-link.active {
+  color: var(--text-dark-green);
+  font-weight: 700;
+  font-size: 18px;
+}
+/* 3. Banner */
+.banner-wrapper {
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-wrapper .banner-text-container .banner-subtitle {
+  color: var(--text-dark-gray);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.banner-wrapper .banner-text-container .banner-text {
+  color: var(--text-dark-gray);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.banner-wrapper .banner-text-container .banner-title {
+  color: var(--text-dark-gray);
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.banner-wrapper .banner-text-container .banner-title span {
+  color: var(--text-dark-green);
+}
+.banner-wrapper .banner-text-container .banner-btn {
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  font-weight: 700;
+}
+.banner-wrapper .slide-bottom {
+  -webkit-animation: slide-bottom 3s ease-in infinite alternate both;
+  animation: slide-bottom 3s ease-in infinite alternate both;
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+}
+
+/* 4. Client */
+.client-section-wrapper {
+  background-color: var(--bg-light-2);
+  padding: 40px 0px;
+}
+.client-section-wrapper h2 {
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.client-section-wrapper .client-carousel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.client-section-wrapper .client-carousel img {
+  width: auto !important;
+  height: 50px;
+}
+.client-section-wrapper .client-carousel .owl-dots {
+  display: none;
+}
+/* 5. About */
+.about-wrapper .row {
+  display: flex;
+  align-items: center;
+  margin: 40px 0px;
+}
+.about-wrapper .about-wrapper-row2 {
+  background-color: var(--bg-light-2);
+}
+.about-wrapper .about-number {
+  background-color: var(--bg-dark-green);
+  color: var(--text-white);
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  margin: 20px 0px;
+}
+.about-wrapper .about-title {
+  color: var(--text-black);
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.about-wrapper .about-description {
+  color: var(--text-black);
+}
+.about-wrapper .find-out-more-btn {
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  font-weight: 700;
+}
+.about-wrapper .projects .project-count {
+  color: var(--text-orange);
+  font-size: 40px;
+  font-weight: 900;
+  font-family: var(--secondary-font);
+}
+.about-wrapper .projects .project-name {
+  color: var(--text-light-2);
+  font-weight: 900;
+  font-family: var(--secondary-font);
+}
+/* 6. Feature */
+.feature-wrapper {
+  background-color: var(--bg-light-2);
+}
+.feature-wrapper .feature-title {
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  margin-bottom: 40px;
+}
+.feature-wrapper .feature-card-title {
+  font-weight: 600;
+  font-family: var(--secondary-font);
+}
+.feature-wrapper .ft1 {
+  background-color: var(--bg-features-1);
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+.feature-wrapper .ft1::before {
+  content: url(../images/consultancy.png);
+  position: absolute;
+  display: block;
+  margin-top: -70px;
+}
+.feature-wrapper .ft2 {
+  background-color: var(--bg-features-2);
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+.feature-wrapper .ft2::before {
+  content: url(../images/solutions.png);
+  position: absolute;
+  display: block;
+  margin-top: -70px;
+}
+.feature-wrapper .ft3 {
+  background-color: var(--bg-features-3);
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+.feature-wrapper .ft3::before {
+  content: url(../images/simple.png);
+  position: absolute;
+  display: block;
+  margin-top: -70px;
+}
+.feature-wrapper .ft4 {
+  background-color: var(--bg-features-4);
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+.feature-wrapper .ft4::before {
+  content: url(../images/deadline.png);
+  position: absolute;
+  display: block;
+  margin-top: -70px;
+}
+.feature-wrapper .ft5 {
+  background-color: var(--bg-features-5);
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+.feature-wrapper .ft5::before {
+  content: url(../images/data.png);
+  position: absolute;
+  display: block;
+  margin-top: -70px;
+}
+.feature-wrapper .ft6 {
+  background-color: var(--bg-features-6);
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+.feature-wrapper .ft6::before {
+  content: url(../images/flexible.png);
+  position: absolute;
+  display: block;
+  margin-top: -70px;
+}
+
+/* 7. Pricing */
+.pricing-wrapper .pricing-title {
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  margin-bottom: 40px;
+}
+.pricing-wrapper .pricing-card {
+  text-align: center;
+}
+.pricing-wrapper .pricing-card-1 {
+  border-radius: 15px;
+  box-shadow: 2px 0px 7px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 1s;
+}
+.pricing-wrapper .pricing-card-1:hover {
+  box-shadow: 2px 0px 7px 5px rgba(0, 0, 0, 0.4);
+  transform: translateY(-20px);
+}
+.pricing-wrapper .pricing-card-title {
+  color: var(--text-black);
+  font-weight: 700;
+  padding-top: 20px;
+  font-family: var(--secondary-font);
+}
+.pricing-wrapper .pricing-card img {
+  max-height: 250px;
+}
+.pricing-wrapper .pricing-card-tag {
+  font-size: 25px;
+  font-weight: 900;
+  font-family: var(--secondary-font);
+  margin: 5px 0px;
+}
+.pricing-wrapper .pricing-card-duration {
+  font-weight: 900;
+  font-family: var(--secondary-font);
+  margin: 5px 0px;
+}
+.pricing-wrapper .pricing-card ul {
+  padding: 0px;
+}
+.pricing-wrapper .pricing-card ul li {
+  list-style: none;
+}
+.pricing-wrapper .pricing-card .pricing-card-btn {
+  background-color: var(--bg-dark-green);
+  color: var(--text-white);
+  font-weight: 700;
+}
+.pricing-wrapper .pricing-card .featured-btn {
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  font-weight: 700;
+}
+
+.pricing-wrapper .pricing-card .featured {
+  border: 5px solid var(--bg-black);
+  position: relative;
+}
+.pricing-wrapper .ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+.pricing-wrapper .ribbon::before,
+.pricing-wrapper .ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border: 5px solid var(--bg-black);
+}
+.pricing-wrapper .ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: var(--bg-black);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font: 700 18px/1 "Lato", sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+.pricing-wrapper .ribbon-top-left {
+  top: -10px;
+  left: -10px;
+}
+.pricing-wrapper .ribbon-top-left::before,
+.pricing-wrapper .ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.pricing-wrapper .ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.pricing-wrapper .ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.pricing-wrapper .ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+.free-trial-wrapper {
+  background-color: var(--bg-light-2);
+}
+.free-trial-wrapper .free-trial-title {
+  font-size: 30px;
+  font-family: var(--secondary-font);
+  font-family: 900;
+}
+.free-trial-wrapper .free-trial-col-btn {
+  display: flex;
+  justify-content: end;
+}
+.free-trial-wrapper .free-trial-btn {
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  font-weight: 700;
+}
+.free-trial-wrapper .free-trial-btn .fa-rocket {
+  color: var(--text-yellow);
+  margin-right: 5px;
+}
+/* 8. Reviews */
+.reviews-wrapper .reviews-wrapper-title {
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  margin-bottom: 40px;
+}
+.reviews-wrapper .row {
+  display: flex;
+  align-items: center;
+}
+.reviews-wrapper .reviews-wrapper-card {
+  border-radius: 20px;
+  box-shadow: 2px 0px 7px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px 60px;
+}
+.reviews-wrapper .reviews-title {
+  color: var(--text-black);
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.reviews-wrapper .reviews-designation {
+  color: var(--text-dark-green);
+  font-weight: 700;
+}
+.reviews-wrapper .about-description {
+  color: var(--text-black);
+}
+/* 9. Brands */
+.brand-wrapper {
+  background-color: var(--bg-light-2);
+}
+.brand-wrapper .brand-title {
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  margin-bottom: 40px;
+}
+.brand-wrapper .img-container {
+  background-color: var(--bg-white);
+  margin: 20px 0px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  transition: transform 0.5s;
+  box-shadow: 2px 0px 7px 5px rgba(0, 0, 0, 0.2);
+}
+.brand-wrapper .img-container:hover {
+  box-shadow: 2px 0px 7px 5px rgba(0, 0, 0, 0.4);
+  transform: scale(1.04);
+}
+
+/* 10. faq */
+.faq-wrapper .faq-title {
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  margin-bottom: 40px;
+}
+.faq-wrapper .accordion-item {
+  border: none;
+}
+.faq-wrapper .accordion-button:focus {
+  box-shadow: none;
+}
+.faq-wrapper .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: var(--bg-dark-green);
+  box-shadow: none;
+}
+.faq-wrapper .accordion-button {
+  font-size: 18px;
+  font-weight: 900;
+}
+.faq-wrapper .accordion-button::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f067";
+  background-image: none;
+}
+
+.faq-wrapper .accordion-button:not(.collapsed)::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f068";
+}
+
+/* 10. Footer */
+.footer-wrapper{
+  padding: 30px 0px;
+  color: var(--text-white);
+  background: url(../images/bg_footer.png);
+  background-color: var(--bg-black);
+}
+.footer-wrapper .footer-title{
+  font-family: var(--secondary-font);
+  font-weight: 900;
+}
+.footer-wrapper img{
+ width: 50%;
+}
