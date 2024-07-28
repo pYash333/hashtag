@@ -9,6 +9,12 @@ $(document).ready(function () {
       $(".navbar").css("background-color", "transparent");
     }
   });
+  AOS.init({
+    duration: 1200,
+  })
+  if($(".number").length > 0){
+    $(".number").counterUp({time:3000,delay: 100});
+  }
 });
 
 // navbar collapse
